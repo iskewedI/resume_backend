@@ -4,7 +4,7 @@ const error = require('../middleware/error');
 const cors = require('../middleware/cors');
 const { apiVersion, endpoints } = require('../config.json');
 
-const getApiEndpoint = endpoint => `/${apiVersion}/${endpoint}`;
+const getApiEndpoint = endpoint => `/api/${apiVersion}/${endpoint}`;
 
 module.exports = function (app) {
   app.use(express.json());

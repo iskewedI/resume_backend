@@ -1,6 +1,7 @@
 {
     "apiVersion": "v1",
     "endpoints": {
-        "Projects": "projects"
+        "Projects": "projects",
+        "GithubISkewed": "https://api.github.com/users/iskewedi"
     }
 }
