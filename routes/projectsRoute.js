@@ -8,7 +8,7 @@ const { Project } = require('../models/project');
 // const auth = require('../middleware/auth');
 
 router.get('/', async (req, res) => {
-  const dbProjects = await Project.find().sort('name');
+  const dbProjects = await Project.find().sort('order');
 
   res.send(dbProjects);
 });
